@@ -138,6 +138,10 @@
             padding: 2rem;
         }
         
+        .web-hidden {
+            display: none;
+        }
+        
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
@@ -150,6 +154,9 @@
             .mobile-hidden {
                 display: none;
             }
+            .web-hidden {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -159,7 +166,8 @@
     <header>
         <h1>Sabor da Terra</h1>
         <nav>
-            <a href="#cardapios">Cardápio</a>
+            <a class="mobile-hidden" href="#cardapios">Cardápio</a>
+            <a class="web-hidden" href="#cardapios-mobile">Cardápio</a>
             <a href="#localizacao">Localização</a>
             <a href="#futuro">Futuro</a>
             <a href="#contato">Contato</a>
@@ -171,7 +179,7 @@
             <img style="width:100%;" src="./assets/CARDAPIO.png" />
         </section>
 
-        <section class="grid-section">
+        <section class="grid-section" id="cardapios-mobile">
             <div class="card">
                 <p> <strong>Manhã (8–10 h):</strong> Bolo de Banana acompanhado com chá PREÇO – R$ 7,50. </p>
                 <p> <strong>Manhã (10–11 h):</strong> Penne ao Molho Branco Cremoso PREÇO – R$ 15,00. </p>

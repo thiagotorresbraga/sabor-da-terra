@@ -16,6 +16,14 @@
             --branco: #ffffff;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
+         :target {
+            scroll-margin-top: .8em;
+        }
+        
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
@@ -30,9 +38,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
         
         nav a {
@@ -55,7 +60,7 @@
         section {
             background-color: var(--branco);
             margin-bottom: 2rem;
-            padding: 2rem;
+            padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
@@ -206,7 +211,7 @@
         </section>
 
         <section id="futuro">
-            <h2>🌱 futuro</h2>
+            <h2>🌱 Futuro</h2>
             <p>Empreender com consciência ambiental é uma aposta estratégica para um futuro mais justo, inovador e resiliente. Negócios sustentáveis geram impacto positivo e são cada vez mais valorizados por consumidores e investidores.</p>
 
             <div style="width: 100%; display: flex; justify-content: center;">
@@ -228,12 +233,8 @@
     <footer>
         <div style="max-width: 1000px; margin: 0 auto;">
             <p><strong>Sabor da Terra</strong> &copy; 2025</p>
-            <p>📧 <a href="mailto:sabor@daterra.com.br" style="color: var(--branco); text-decoration: underline;">sabor@daterra.com.br</a> | 📞 (61) 9321-4058</p>
+            <p>📧 <a href="mailto:sabor@daterra.com.br" style="color: var(--branco); text-decoration: underline;">sabordaterra@gmail.com.br</a> | 📞 (61) 9321-4058</p>
             <p>Siga-nos: 🌿 <strong>@sabordaterra.sustentavel</strong></p>
-            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                <a href="#" style="color: var(--branco); text-decoration: none;">Facebook</a>
-                <a href="#" style="color: var(--branco); text-decoration: none;">LinkedIn</a>
-            </div>
         </div>
     </footer>
 

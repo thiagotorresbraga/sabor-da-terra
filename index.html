@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Sabor da Terra</title>
+    <style>
+         :root {
+            --verde-escuro: #467302;
+            --verde-medio: #9DBF54;
+            --verde-vivo: #97BF04;
+            --verde-claro: #CCD99C;
+            --cinza-claro: #dbffcb;
+            --branco: #ffffff;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--cinza-claro);
+            color: var(--verde-escuro);
+        }
+        
+        header {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: var(--branco);
+            margin-left: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--verde-vivo);
+        }
+        
+        main {
+            padding: 2rem;
+            scroll-behavior: smooth;
+        }
+        
+        section {
+            background-color: var(--branco);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        h2 {
+            color: var(--verde-escuro);
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            padding-left: 1.2rem;
+        }
+        
+        .grid-section {
+            background-color: var(--verde-claro);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+        
+        .card {
+            background-color: var(--branco);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(193, 230, 182, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: scale(1.03);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card p {
+            padding: 1rem;
+            font-size: 1rem;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        input,
+        textarea {
+            padding: 0.8rem;
+            border: 1px solid var(--verde-claro);
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        button {
+            background-color: var(--verde-medio);
+            color: var(--branco);
+            border: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: var(--verde-escuro);
+        }
+        
+        iframe {
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+        
+        footer {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav a {
+                margin: 0.5rem 0;
+                display: block;
+            }
+            .mobile-hidden {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sabor da Terra</h1>
+        <nav>
+            <a href="#cardapios">Cardápio</a>
+            <a href="#localizacao">Localização</a>
+            <a href="#futuro">Futuro</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mobile-hidden" id="cardapios">
+            <img style="width:100%;" src="./assets/CARDAPIO.png" />
+        </section>
+
+        <section class="grid-section">
+            <div class="card">
+
+                <p>Manhã (8–10 h): Bolo de Banana acompanhado com chá PREÇO – R$ 7,50. Manhã (10–11 h): Penne ao Molho Branco Cremoso PREÇO – R$ 15,00. Manhã (10–11 h): Penne ao Molho Sugo</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>🥗 Alimentação Saudável</h2>
+            <p>Uma alimentação equilibrada fortalece o sistema imunológico, melhora a disposição e previne doenças crônicas. Comer bem é um ato de autocuidado e respeito ao corpo.</p>
+        </section>
+
+        <section id="institucional">
+            <h2>🏢 Missão, Visão e Valores</h2>
+            <p><strong>Missão:</strong> “Servir comida saudável e saborosa, produzida com práticas sustentáveis e respeito ao meio ambiente.”</p>
+            <p><strong>Visão:</strong> “Ser referência em gastronomia sustentável, inspirando outras empresas e pessoas a fazerem escolhas conscientes.”</p>
+            <p><strong>Valores:</strong> “Sustentabilidade, saúde, valorização local, inovação e transparência.”</p>
+        </section>
+
+        <section id="localizacao">
+            <h2>📍 Localização</h2>
+            <p>Qs5 rua 300; Icesp; Colégio Promove - Brasília, DF</p>
+            <iframe src="https://www.google.com/maps?q=Colégio+Promove+Brasília&output=embed" width="100%" height="300" allowfullscreen loading="lazy"></iframe>
+        </section>
+
+        <section id="futuro">
+            <h2>🌱 futuro</h2>
+            <p>Empreender com consciência ambiental é uma aposta estratégica para um futuro mais justo, inovador e resiliente. Negócios sustentáveis geram impacto positivo e são cada vez mais valorizados por consumidores e investidores.</p>
+
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <img style="min-width: 50%;" class="mobile-hidden" src="https://www.nucleodoconhecimento.com.br/wp-content/uploads/2016/10/grafico-de-barras-ilustrando-a-porcentagem-referente-a-alimentacao-mais-consumida-678x420.png" width="600" height="400" alt="">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>📩 Fale Conosco</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea rows="5" placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <p><strong>Sabor da Terra</strong> &copy; 2025</p>
+            <p>📧 <a href="mailto:sabor@daterra.com.br" style="color: var(--branco); text-decoration: underline;">sabor@daterra.com.br</a> | 📞 (61) 9321-4058</p>
+            <p>Siga-nos: 🌿 <strong>@sabordaterra.sustentavel</strong></p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="#" style="color: var(--branco); text-decoration: none;">Facebook</a>
+                <a href="#" style="color: var(--branco); text-decoration: none;">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</html>
